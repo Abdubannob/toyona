@@ -236,8 +236,8 @@ const Abdulaziz = [
     {
         numbers: 13,
         name: "Qudratjon",
-        money: 75000,
-        count: 1,
+        money: 150000,
+        count: 2,
         value: "kg",
         equivalent: "so'm"
     },
@@ -257,7 +257,14 @@ const Abdulaziz = [
         value: "kg",
         equivalent: "so'm"
     },
-
+    {
+        numbers: 16,
+        name: "Azamjon",
+        money: 500000,
+        count: "Pulga",
+        value: "",
+        equivalent: "so'm"
+    },
 
 ]
 
@@ -339,7 +346,14 @@ const Azizbek = [
         equivalent: "so'm"
     },
 
- 
+    {
+        numbers: 10,
+        name: "Ikrom",
+        money: 375000,
+        count: 5,
+        value: "kg",
+        equivalent: "so'm"
+    },
 
 
 ]
