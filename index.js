@@ -5,6 +5,7 @@ let Nazarov = document.getElementById("Azizbek")
 let Mazokirov = document.getElementById("Sultonbek")
 let Xokimov = document.getElementById("Xokimov")
 let p = document.getElementById("Polatjon")
+let Ixtiyorjon = document.getElementById("Ixtiyorjon")
 let trr = document.querySelector(".tr")
 let Title = document.querySelector(".wrapper h1")
 const searchInput = document.querySelector('.input')
@@ -538,6 +539,115 @@ const XokimovX = [
     }
 ]
 
+const Ixtiyor = [
+    {
+        numbers: 1,
+        name: "  Jasurbek",
+        money: 255000,
+        count: 3,
+        value: "kg",
+        equivalent: "so'm"
+    },
+    {
+        numbers: 2,
+        name: "Jo'rayev B",
+        money: 425000,
+        count: 5,
+        value: "kg",
+        equivalent: "so'm"
+     
+    },
+    {
+        numbers: 3,
+        name: "Ahmadjon",
+        money: 255000,
+        count: 3,
+        value: "kg",
+        equivalent: "so'm"
+    },
+    {
+        numbers: 4,
+        name: "Halimjon",
+        money: 170000,
+        count: 2,
+        value: "kg",
+        equivalent: "so'm"
+    },
+    {
+        numbers: 5,
+        name: "Abdulaziz",
+        money: 340000,
+        count: 4,
+        value: "kg",
+        equivalent: "so'm"
+    },
+    {
+        numbers: 6,
+        name: "Xokimov X",
+        money: 340000,
+        count: 4,
+        value: "kg",
+        equivalent: "so'm"
+    },
+    {
+        numbers: 7,
+        name: "Nuriddin",
+        money: 340000,
+        count: 4,
+        value: "kg",
+        equivalent: "so'm"
+    },
+    {
+        numbers: 8,
+        name: "Azamjon",
+        money: 650000,
+        count: 0,
+        value: "O'zlari kelishadi",
+        equivalent: "so'm"
+    },
+    {
+        numbers: 9,
+        name: " Ikrom",
+        money: 425000,
+        count: 5,
+        value: "kg",
+        equivalent: "so'm"
+    },
+    {
+        numbers: 10,
+        name: "Abdubannob ",
+        money: 170000,
+        count: 2,
+        value: "kg",
+        equivalent: "so'm"
+    },
+    {
+        numbers: 11,
+        name: "Sultonbek",
+        money: 340000,
+        count: 4,
+        value: "kg",
+        equivalent: "so'm"
+    },
+    {
+        numbers: 12,
+        name: "Abulqosimov X",
+        money: 170000,
+        count: 2,
+        value: "kg",
+        equivalent: "so'm"
+    },
+    {
+        numbers: 13,
+        name: "Saydahmadxon",
+        money: 340000,
+        count: 4,
+        value: "kg",
+        equivalent: "so'm"
+    }
+]
+
+
 Saidahmadxon.onclick = () => {
     table.innerHTML = ""
     Title.innerHTML = ""
@@ -679,6 +789,31 @@ for (let i = 0; i < length; i++) {
 }
 
 Title.innerHTML = "Po'latjon o'zi olgan"
+}
+
+
+Ixtiyorjon.onclick = () => {
+    table.innerHTML = ""
+    Title.innerHTML = ""
+    let length = Ixtiyor.length,
+    element = null;
+for (let i = 0; i < length; i++) {
+    element = Ixtiyor[i];
+    // let number = 1
+    let html = `
+    <tr>
+    <th class="number" scope="row">${element.numbers}</th>
+    <td class="person" >${element.name}</td>
+    <td class="money">${element.money} ${element.equivalent} </td>
+    <td class="value">${element.count} ${element.value}</td>
+  </tr>
+    `
+
+    table.innerHTML += html
+  console.log(element)
+}
+
+Title.innerHTML = "Ixtiyorjonga to'yona"
 }
 
 
