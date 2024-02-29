@@ -614,7 +614,7 @@ const Ixtiyor = [
     {
         numbers: 8,
         name: "Azamjon",
-        money: 650000,
+        money: 750000,
         count: 0,
         value: "O'zlari kelishadi",
         equivalent: "so'm"
